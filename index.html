@@ -1,28 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <title>Vite + Alpine</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
-  <div id="app" x-data="app">
-    <a href="https://vitejs.dev" target="_blank">
-      <img :src="viteLogo" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://alpinejs.dev/" target="_blank">
-      <img :src="alpineLogo" class="logo alpine" alt="Alpine logo" />
-    </a>
-    <h1>Hello Vite + Alpine!</h1>
-    <div class="card">
-      <button id="counter" type="button" @click="count++" x-text="`count is ${count}`"></button>
+  <div x-data="{ count: 0 }">
+    <div class="w-screen h-screen flex items-center justify-center bg-[#2F4C4C] text-white antialiased">
+      <!-- <button @click="count++" x-text="`count is ${count}`"></button> -->
+       <div class="w-md leading-loose">
+         <h1 class="text-3xl split uppercase">
+          Timber is our
+          <span class="corinthia text-6xl capitalize leading-24 corinthia-space">heritage</span>
+          <br>
+          <span class="text-xl">Since our founding, we’ve made structures that enrich lives with the strength and beauty that grows naturally in wood. Timber captures life and legacy like no other material.</span>
+        </h1>
+       </div>
     </div>
-    <p class="read-the-docs">Click on the Vite and Alpine logos to learn more</p>
   </div>
   <script type="module" src="/main.js"></script>
 </body>
-
 </html>

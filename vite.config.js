@@ -1,6 +1,7 @@
-export default {
-  base: './',
-  build: {
-    chunkSizeWarningLimit: 1024 // kB
-  }
-}
+import tailwindcss from "@tailwindcss/vite"
+import { defineConfig } from "vite"
+
+export default defineConfig({
+  plugins: [
+    tailwindcss(),]
+});
